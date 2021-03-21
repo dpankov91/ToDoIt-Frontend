@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.header{
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.btnAddTask{
+  margin-right: 150px;
+}
+
+.btnAddAssignee{
+  margin-right: 30px;
+}
+
+.frm{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.search{
+  display: block;
+  text-align: center;
+}
+
+.searchInput{
+  width: 500px;
+}

@@ -6,10 +6,15 @@ import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import {ReactiveFormsModule} from "@angular/forms";
+import { AddDeleteAsigneesComponent } from './add-delete-asignees/add-delete-asignees.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    TodolistComponent
+    TodolistComponent,
+    AddDeleteAsigneesComponent
   ],
   imports: [
     BrowserModule,

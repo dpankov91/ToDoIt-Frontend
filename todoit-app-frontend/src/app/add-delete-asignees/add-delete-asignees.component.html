@@ -1,0 +1,23 @@
+<div class="shadow-lg col-sm-3 p-3">
+  <div class="px-4 py-3">
+    <div class="list-group">
+      <button type="button" class="list-group-item list-group-item-action active">
+        Asignee
+      </button>
+      <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+      <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+      <button type="button" class="list-group-item list-group-item-action">Veni Vidi Vici</button>
+      <button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button>
+    </div>
+    <form [formGroup]="addAsigneeForm">
+      <div class="form-group">
+        <input type="text" placeholder="Enter new name to add to list" formControlName="asigneeName"
+               class="form-control" required/>
+      </div>
+      <div class>
+        <button style="margin:10px" type="button" class="btn btn-primary" (click)="createAsignee()">Add</button>
+        <button type="button" class="btn btn-primary" (click)="deleteAsignee()">Delete Selected</button>
+      </div>
+    </form>
+  </div>
+</div>

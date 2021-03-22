@@ -8,7 +8,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddEditTaskComponent } from './add-edit-task/add-edit-task.component';
 import {ReactiveFormsModule} from "@angular/forms";
 
-import {ReactiveFormsModule} from "@angular/forms";
 import { AddDeleteAsigneesComponent } from './add-delete-asignees/add-delete-asignees.component';
 
 
@@ -16,7 +15,7 @@ import { AddDeleteAsigneesComponent } from './add-delete-asignees/add-delete-asi
   declarations: [
     AppComponent,
     TodolistComponent,
-    AddDeleteAsigneesComponent
+    AddDeleteAsigneesComponent,
     AddEditTaskComponent
   ],
   imports: [

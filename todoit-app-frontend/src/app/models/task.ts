@@ -1,4 +1,4 @@
-import {Asignees} from "./asignees";
+import {Asignee} from "./asignee";
 
 export class Task {
   id: number;

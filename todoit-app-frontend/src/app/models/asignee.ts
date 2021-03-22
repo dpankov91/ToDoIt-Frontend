@@ -1,4 +1,4 @@
-export class Asignees {
+export class Asignee {
   id: number;
   name: string;
 }

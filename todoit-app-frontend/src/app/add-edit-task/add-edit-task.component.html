@@ -1,7 +1,5 @@
-<p>add-edit-task works!</p>
-<form [formGroup]="addTaskForm">
-  <div class="main-div">
-    <div class = "shadow-lg col-sm-4 p-3">
+   <form [formGroup]="addTaskForm">
+    <div class = "shadow-lg col-sm-3 p-3">
       <div class="px-4 py-3">
         <div class="form-group">
           <label>Description</label>
@@ -11,11 +9,18 @@
           <label>DueDate</label>
           <input type="date" formControlName="dueDate" class="form-control" required/>
         </div>
-        <div class="form-group">
-          <label>Assign to</label>
-          <input type="text" formControlName="assignTo" class="form-control" required/>
+        <div class="form-group col-auto">
+          <label for="inputState">Assign to</label>
+          <select id="inputState" class="form-control">
+            <option selected>Assignees...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class>
+          <button  style="margin:10px" type="button" class="btn btn-primary" (click)="saveChanges()">Save</button>
+          <button type="button" class="btn btn-primary" (click)="cancel()">Cancel</button>
         </div>
       </div>
     </div>
-  </div>
 </form>
+

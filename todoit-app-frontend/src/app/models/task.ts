@@ -2,7 +2,7 @@ import {Asignee} from "./asignee";
 
 export class Task {
   id: number;
-  description: String;
+  description: string;
   assignedId: number;
   dueDate: string;
   isCompleted: boolean;

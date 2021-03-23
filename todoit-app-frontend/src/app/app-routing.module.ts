@@ -7,8 +7,8 @@ import {AddDeleteAsigneesComponent} from "./add-delete-asignees/add-delete-asign
 
 const routes: Routes = [
   {path: '', component: TodolistComponent},
-  {path: 'adddeleteasignees', component: AddDeleteAsigneesComponent},
-  {path: 'addedittask', component: AddEditTaskComponent},
+  {path: 'assignees', component: AddDeleteAsigneesComponent},
+  {path: 'task', component: AddEditTaskComponent},
 ];
 
 

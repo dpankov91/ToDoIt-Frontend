@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6cb2342d-1c70-4367-9044-91826d97a007" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoit-app-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/todoit-app-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoit-app-frontend/src/app/models/task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/todoit-app-frontend/src/app/models/task.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoit-app-frontend/src/app/todolist/todolist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/todoit-app-frontend/src/app/todolist/todolist.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

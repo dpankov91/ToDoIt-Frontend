@@ -4,6 +4,8 @@ import {Form, FormBuilder, FormControl, Validators} from "@angular/forms";
 import {AssigneeService} from "../services/assignee.service";
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
+import {TaskService} from "../services/task.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-todolist',
@@ -14,21 +16,23 @@ export class TodolistComponent implements OnInit {
 
   searchForm: FormControl;
   mySearch: string;
+  taskLst: Task[];
 
-  constructor(private taskService: AssigneeService,
+  constructor(private taskService: TaskService,
               private formBuilder: FormBuilder) {
   }
 
   ngOnInit(): void {
-    // this.updateTable(this.taskService.getAllTasks())
-
     this.searchForm = this.formBuilder.control({
       mySearch: ['', Validators.required]
     })
+    this.taskService.getAllTasksByFilter(null).subscribe(listOfTasks => {this.taskLst = listOfTasks;});
+     this.updateTable(this.taskLst)
   }
 
   search() {
-    // this.updateTable(this.taskService.getAllTasksByFilter(userInput: string));
+    this.taskService.getAllTasksByFilter(this.mySearch).subscribe(listOfTasks => {this.taskLst = listOfTasks;})
+     this.updateTable(this.taskLst);
   }
 
   updateTable(taskList: Task[]) {

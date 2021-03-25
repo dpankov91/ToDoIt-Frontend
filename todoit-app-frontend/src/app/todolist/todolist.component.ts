@@ -6,6 +6,7 @@ import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
 import {TaskService} from "../services/task.service";
 import {Observable} from "rxjs";
+import {getHtmlTagDefinition} from "@angular/compiler";
 
 @Component({
   selector: 'app-todolist',
@@ -15,7 +16,9 @@ import {Observable} from "rxjs";
 export class TodolistComponent implements OnInit {
 
   searchForm: FormControl;
+  taskCompleted: boolean;
   mySearch: string;
+  selectedTask : Task;
   taskLst: Task[];
 
   constructor(private taskService: TaskService,
@@ -37,5 +40,12 @@ export class TodolistComponent implements OnInit {
 
   updateTable(taskList: Task[]) {
     //TODO update table in .html using the list of tasks received
+  }
+
+  updateTaskCompletion() {
+    //We need a list of tasks in order to change only the completed value of the selected task
+     //something like, get selected Task
+    this.selectedTask.isCompleted = this.taskCompleted;
+    this.taskService.updateTaskCompletion(this.selectedTask);
   }
 }

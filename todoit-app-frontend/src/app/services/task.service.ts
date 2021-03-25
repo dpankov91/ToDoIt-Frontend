@@ -22,4 +22,8 @@ export class TaskService {
   editTask(editedTask: Task){
     this.http.put<Task>(this.apiUrl,editedTask);
   }
+
+  updateTaskCompletion(updatedTask: Task) {
+    this.http.put<Task>(this.apiUrl,updatedTask);
+  }
 }

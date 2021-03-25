@@ -7,6 +7,7 @@ import { TodolistComponent } from './todolist/todolist.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddEditTaskComponent } from './add-edit-task/add-edit-task.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule} from "@angular/forms";
 
 import { AddDeleteAsigneesComponent } from './add-delete-asignees/add-delete-asignees.component';
 import {HttpClientModule} from "@angular/common/http";
@@ -24,7 +25,8 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

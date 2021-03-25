@@ -9,6 +9,7 @@ import { AddEditTaskComponent } from './add-edit-task/add-edit-task.component';
 import {ReactiveFormsModule} from "@angular/forms";
 
 import { AddDeleteAsigneesComponent } from './add-delete-asignees/add-delete-asignees.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AddDeleteAsigneesComponent } from './add-delete-asignees/add-delete-asi
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

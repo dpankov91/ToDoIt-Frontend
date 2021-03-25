@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
 @Injectable({
   providedIn: 'root'
 })
-export class AssigneeServiceService {
+export class AssigneeService {
 
   apiUrl = 'https://localhost:44379/assignee';
 

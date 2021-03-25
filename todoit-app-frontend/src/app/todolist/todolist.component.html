@@ -4,8 +4,8 @@
   <button class="btnAddAssignee btn btn-secondary" routerLink="/assignees">Add New Assignee</button>
   <button class="btnAddTask btn btn-primary" routerLink="/task">Add New Task</button>
       <form class="frm">
-          <input type="text" class="searchInput" placeholder="Search">
-          <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+          <input type="text" formControlName="mySearch" class="searchInput" placeholder="Search">
+          <button type="submit" class="btn"(click)="search()"><i class="fas fa-search"></i></button>
       </form>
 </div>
 <br>

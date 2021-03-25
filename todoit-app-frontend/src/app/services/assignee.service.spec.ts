@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AssigneeServiceService } from './assignee-service.service';
+import { AssigneeService } from './assignee.service';
 
 describe('AssigneeServiceService', () => {
-  let service: AssigneeServiceService;
+  let service: AssigneeService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AssigneeServiceService);
+    service = TestBed.inject(AssigneeService);
   });
 
   it('should be created', () => {
